@@ -1,0 +1,141 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: Mandelbrot_set_renderer
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target Mandelbrot_set_renderer
+
+
+#############################################
+# Order-only phony target for Mandelbrot_set_renderer
+
+build cmake_object_order_depends_target_Mandelbrot_set_renderer: phony || CMakeFiles/Mandelbrot_set_renderer.dir
+
+build CMakeFiles/Mandelbrot_set_renderer.dir/src/main.cpp.o: CXX_COMPILER__Mandelbrot_set_renderer_Debug /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/src/main.cpp || cmake_object_order_depends_target_Mandelbrot_set_renderer
+  DEP_FILE = CMakeFiles/Mandelbrot_set_renderer.dir/src/main.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++20
+  INCLUDES = -I/Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/lib/SDL2/x86_64-w64-mingw32/include
+  OBJECT_DIR = CMakeFiles/Mandelbrot_set_renderer.dir
+  OBJECT_FILE_DIR = CMakeFiles/Mandelbrot_set_renderer.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Mandelbrot_set_renderer
+
+
+#############################################
+# Link the executable Mandelbrot_set_renderer
+
+build Mandelbrot_set_renderer: CXX_EXECUTABLE_LINKER__Mandelbrot_set_renderer_Debug CMakeFiles/Mandelbrot_set_renderer.dir/src/main.cpp.o
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6
+  LINK_PATH = -L/Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/lib/SDL2/x86_64-w64-mingw32/lib
+  OBJECT_DIR = CMakeFiles/Mandelbrot_set_renderer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Mandelbrot_set_renderer
+  TARGET_PDB = Mandelbrot_set_renderer.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-debug && "/Users/wolfplay/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-debug && "/Users/wolfplay/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer -B/Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-debug
+
+build all: phony Mandelbrot_set_renderer
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config-version.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FeatureSummary.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config-version.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FeatureSummary.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/wolfplay/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

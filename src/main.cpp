@@ -1,11 +1,10 @@
 #include <SDL2/SDL.h>
 #include <numeric>
 #include <complex>
-#include <iostream>
 
 int zoom = 1;
-int pixelShift_X = 1000;
-int pixelShift_Y = 1000;
+int pixelShift_X = 0;
+int pixelShift_Y = 0;
 
 int isInSet(std::complex<double> c) {
 

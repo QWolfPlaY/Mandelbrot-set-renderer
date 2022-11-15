@@ -1,0 +1,2 @@
+Cannot generate 'RelWithDebInfo' into /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-relwithdebinfo
+CMakeCache.txt is found in the project dir, only in-source generation will be performed.

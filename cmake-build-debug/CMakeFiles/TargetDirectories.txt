@@ -1,0 +1,3 @@
+/Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-debug/CMakeFiles/Mandelbrot_set_renderer.dir
+/Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-debug/CMakeFiles/rebuild_cache.dir

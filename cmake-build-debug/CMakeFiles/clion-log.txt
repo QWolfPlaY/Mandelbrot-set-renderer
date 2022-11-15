@@ -1,0 +1,4 @@
+"/Users/wolfplay/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -S /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer -B /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer

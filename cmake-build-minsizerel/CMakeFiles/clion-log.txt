@@ -1,0 +1,2 @@
+Cannot generate 'MinSizeRel' into /Users/wolfplay/Documents/GitHub/Mandelbrot-set-renderer/cmake-build-minsizerel
+CMakeCache.txt is found in the project dir, only in-source generation will be performed.
